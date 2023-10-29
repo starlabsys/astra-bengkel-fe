@@ -5,12 +5,10 @@ class DateFormatData {
     }
 
     public dateSend = ( date : string ) : string => {
-        // const data = new Date( date );
         return date + 'T00:00:00+07:07';
     }
 
     public dateSend2 = () : string => {
-        // const data = new Date( date );
         const date = new Date();
         const month = date.getMonth().toString().length === 1 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
         const day = date.getDate().toString().length === 1 ? "0" + date.getDate() : date.getDate();
